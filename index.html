@@ -9,9 +9,11 @@
 	<meta property="og:locale" content="pt_PT" />
 	<meta property="og:image" content="./img/logo.png" />
 	<meta property="article:author" content="https://www.facebook.com/hackerschoolist" />
+
+	<script src="./js/jquery.js"></script>
 	<style type="text/css">
 		@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
-		@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 		@import url(http://fonts.googleapis.com/css?family=Quicksand:300);
 
 		body {
@@ -28,7 +30,7 @@
 		#main {
 			background-color: rgba(44, 44, 44, 0.5); 
 			margin: auto auto;
-			padding: 70px 0px;
+			padding: 70px 0px 30px;
 		}
 
 		#title {
@@ -40,7 +42,7 @@
 		}
 		#logo-wrap {
 			text-align: center; 
-			margin-bottom: 50px; 
+			margin-bottom: 90px; 
 		}
 
 		#logo {
@@ -55,10 +57,23 @@
 
 		.text {
 			padding: 0px 100px;
-			font-size: 1.2em;
+			font-size: 19px;
 			text-align: justify;
-			justify: inter-word;
+			text-justify: inter-word;
 		}
+
+		.text h3 {
+			font-size: 20px;
+		}
+
+		.faqs {
+			padding-top: 20px;
+		}
+
+		.faq p {
+			display: none;
+		}
+
 
 		#social {
 			text-align: center;
@@ -113,14 +128,14 @@
 		}
 
 		a:link {
-			color: rgb(245, 245, 245);
+			color: rgb(101, 174, 231) ;
 			text-decoration: none;
 		}
 		a:visited {
-			color: rgb(245, 245, 245);
+			color: rgb(90, 156, 207);
 		}
 		a:hover {
-			color: rgb(90, 156, 207);
+			color: rgb(255, 255, 255);
 		}
 		a:active {
 			color: rgb(245, 245, 245);
@@ -133,8 +148,24 @@
 			margin-top: 26px;
 		}
 
+		.faq.show p {
+			display: block;
+		}
+
 	</style>
 
+	<script>
+		$(document).ready(function(){
+			$( ".faq" ).click(function() {
+				if(! $(this).hasClass("show"))
+					$(this).addClass("show");
+				else
+					$(this).removeClass("show");
+			});
+		});
+	</script>
+
+	<!-- fontawesome icons -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -146,7 +177,8 @@
 			  js = d.createElement(s); js.id = id;
 			    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=338147406310178&version=v2.0";
 				  fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));</script>
+		  }(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<div id="page">
 		<div id="main">
@@ -156,9 +188,58 @@
 				<img id="logo" src="./img/logo.png" />
 			</div>
 
-			<h2 style="width=100%;text-align:center;font-family:sans-serif;"><a href="lxreactor-2014">ver LX Reactor 2014</a></h2>
+<!--			<h2 style="width=100%;text-align:center;font-family:sans-serif;"><a href="lxreactor-2014">ver LX Reactor 2014</a></h2>-->
 			<div class="text">
-<!--				lorem ipsum dolor sit am cenas-->
+
+				<h2>LX Reactor Winter Edition 2015</h2>
+
+				<p>A HackerSchool traz-te mais uma edição do LX Reactor Winter Edition já em Fevereiro. Temos algumas novidades preparadas para ti!</p>
+
+				<div class="faqs">
+
+					<div class="faq">
+						<h3>O que é o LX Reactor Winter Edition?</h3>
+
+						<p>O LX Reactor Winter Edition, como o nome indica, é a edição de inverno do programa da <a href="http://hackerschool.tecnico.ulisboa.pt" target="_blank">HackerSchool</a> que junta o espírito maker, hacker e empreendedor, presente em alunos universitários de diversas áreas como engenharia e design. Através da criação de equipas multidisciplinares, terás a oportunidade de desenvolver projetos verdadeiramente inovadores.</p>
+					</div>
+
+					<div class="faq">
+						<h3>Como irá ser a Winter Edition 2015?</h3>
+
+						<p>À semelhança do ano passado, esta edição irá decorrer no Espaço Protótipo da Faculdade de Belas Artes e no Instituto Superior Técnico.</p>
+						<p>Este ano terás uma semana para realizar o teu projeto que irá ser apresentado na sessão de encerramento com um pitch final avaliado por um painel de júris.</p>
+						<p>Mas temos uma novidade para ti. A entrada será gratuita!</p>
+					</div>
+
+					<div class="faq">
+						<h3>Quando vai ser o LX Reactor Winter Edition 2015?</h3>
+
+						<p>O evento vai decorrer no Espaço Protótipo da Faculdade de Belas Artes nos dias 21, 22 e 28 de Fevereiro e no dia 1 de Março. Terás ainda uma HackNight de 25 para 26 de Fevereiro no Instituto Superior Técnico (espaço a confirmar).</p>
+						<p>Precisas de mais tempo para trabalhar? Não te preocupes, durante os outros dias iremos também ter um espaço disponível para trabalhares, a partir das 18h, no Instituto Superior Técnico.</p>
+					</div>
+
+					<div class="faq">
+						<h3>Quem é que pode participar?</h3>
+
+						<p>No LX Reactor Winter Edition 2015 juntamos pessoas de várias áreas, com diversas áreas de conhecimento e interesses, que tenham gosto por desenvolver projectos inovadores em equipa.</p>
+					</div>
+
+					<div class="faq">
+						<h3>Que projetos é que podem participar?</h3>
+
+						<p>Sendo o LX Reactor um evento mais vocacionado para o empreendedorismo de base tecnológica, damos preferência a projetos nestas áreas, mas aceitamos também projetos noutras áreas desde que cumpram o regulamento, claro. O regulamento pode ser consultado <a href="#">aqui</a>.</p>
+					</div>
+
+					<div class="faq">
+						<h3>Como é que faço para participar?</h3>
+
+						<p>Para participares terás de preencher o formulário de candidatura<!--<a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>formulário de candidatura</a>-->. Podes candidatar-te individualmente ou já com uma equipa pré-definida. Podes também candidatar-te sem projeto que, através do formulário, iremos juntar-te a um. O formulário estará disponível a partir de dia 12.</p>
+						<p>Após submeteres a candidatura, iremos analisá-la confirmando-te depois a inscrição.</p>
+					</div>
+
+				</div>
+
+				<br /><p>Para mais informações entra em contacto connosco via <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#097;&#099;&#107;&#101;&#114;&#115;&#099;&#104;&#111;&#111;&#108;&#064;&#116;&#101;&#099;&#110;&#105;&#099;&#111;&#046;&#117;&#108;&#105;&#115;&#098;&#111;&#097;&#046;&#112;&#116;">&#104;&#097;&#099;&#107;&#101;&#114;&#115;&#099;&#104;&#111;&#111;&#108;&#064;&#116;&#101;&#099;&#110;&#105;&#099;&#111;&#046;&#117;&#108;&#105;&#115;&#098;&#111;&#097;&#046;&#112;&#116;</a></p>
 
 			</div>
 		</div>
@@ -167,7 +248,7 @@
 			<div class="footer-logo">
 				<span class="helper"></span>
 				<a href="http://hackerschool.tecnico.ulisboa.pt">
-					<img src="./img/logoHS_white_hor.png" />
+					<img src="./img/HS_w500_white.png" />
 				</a>
 			</div>
 			<div class="footer-logo">
@@ -198,10 +279,14 @@
 				<a class="icon" href="https://vine.co/HackerSchool">
 					<i class="fa fa-vine"></i>
 				</a>
+				<a class="icon" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#097;&#099;&#107;&#101;&#114;&#115;&#099;&#104;&#111;&#111;&#108;&#064;&#116;&#101;&#099;&#110;&#105;&#099;&#111;&#046;&#117;&#108;&#105;&#115;&#098;&#111;&#097;&#046;&#112;&#116;">
+					<i class="fa fa-envelope-o"></i>
+				</a>
 			</div>
 
 			<div id="credit">
 				© HackerSchool
+				<!-- designed by Gonçalo Ribeiro and Manuel Palmeira -->
 			</div>
 		</div>
 	</div>

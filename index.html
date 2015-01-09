@@ -11,166 +11,15 @@
 	<meta property="article:author" content="https://www.facebook.com/hackerschoolist" />
 
 	<script src="./js/jquery.js"></script>
-	<style type="text/css">
-		@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
-		@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-		@import url(http://fonts.googleapis.com/css?family=Quicksand:300);
-
-		body {
-			background-color: rgba(80, 123, 173, 1); 
-			color: rgb(245, 245, 245);
-			font-family: "Open Sans Condensed", sans-serif;
-		}
-
-		#page {
-			max-width: 800px;
-			margin: 20px auto;
-		}
-
-		#main {
-			background-color: rgba(44, 44, 44, 0.5); 
-			margin: auto auto;
-			padding: 70px 0px 30px;
-		}
-
-		#title {
-			text-align: center;
-			font-family: "Josefin Sans", sans-serif;
-			margin-top: 20px;
-			margin-bottom: 50px;
-			font-size: 50px; 
-		}
-		#logo-wrap {
-			text-align: center; 
-			margin-bottom: 90px; 
-		}
-
-		#logo {
-			width: 250px;
-		}
-
-		#footer {
-			background-color: rgba(44, 44, 44, 0.5); 
-			margin: 2px auto 0px;
-			padding: 30px;
-		}
-
-		.text {
-			padding: 0px 100px;
-			font-size: 19px;
-			text-align: justify;
-			text-justify: inter-word;
-		}
-
-		.text h3 {
-			font-size: 20px;
-		}
-
-		.faqs {
-			padding-top: 20px;
-		}
-
-		.faq p {
-			display: none;
-		}
-
-
-		#social {
-			text-align: center;
-			margin-top: 05px;
-		}
-
-		#social .icon {
-			-moz-transition: all .2s ease-in;
-			-o-transition: all .2s ease-in;
-			-webkit-transition: all .2s ease-in;
-			transition: all .2s ease-in;
-			width: 35px;
-			height: 35px;
-			background-color: rgb(5,5,5);	
-			border-radius: 50%;
-			line-height: 35px;
-			text-align: center;
-			display: inline-block;
-			border-radius: 50%;
-		}
-		#social .icon:link {
-			color: rgb(245, 245, 245);
-		}
-		#social .icon:visited {
-			color: rgb(245, 245, 245);
-		}
-		#social .icon:hover {
-			background-color: rgb(245, 245, 245);
-			color: rgb(5, 5, 5);
-		}
-		#social .icon:active {
-			color: rgb(5, 5, 5);
-		}
-
-		.footer-logo {
-			width: 49%;
-			display: inline-block;
-			text-align: center;
-			margin-bottom: 35px; 
-		}
-
-		.footer-logo img {
-			max-width: 80%;
-			max-height: 70px;
-			vertical-align: middle;
-		}
-
-		.helper {
-	    	display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-		}
-
-		a:link {
-			color: rgb(101, 174, 231) ;
-			text-decoration: none;
-		}
-		a:visited {
-			color: rgb(90, 156, 207);
-		}
-		a:hover {
-			color: rgb(255, 255, 255);
-		}
-		a:active {
-			color: rgb(245, 245, 245);
-		}
-
-		#credit {
-			text-align: center;
-			font-family: "Quicksand", sans-serif;
-			font-size: 12px;
-			margin-top: 26px;
-		}
-
-		.faq.show p {
-			display: block;
-		}
-
-	</style>
-
-	<script>
-		$(document).ready(function(){
-			$( ".faq" ).click(function() {
-				if(! $(this).hasClass("show"))
-					$(this).addClass("show");
-				else
-					$(this).removeClass("show");
-			});
-		});
-	</script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<script src="./js/faq.js"></script>
 
 	<!-- fontawesome icons -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="fb-root"></div>
+<!--	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		    if (d.getElementById(id)) return;
@@ -178,7 +27,7 @@
 			    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=338147406310178&version=v2.0";
 				  fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script> -->
 
 	<div id="page">
 		<div id="main">
@@ -262,6 +111,12 @@
 				<a href="http://fba.ulisboa.pt" target="_blank">
 					<img src="./img/FBAUL_w400_white.png" />
 				</a>
+			</div>
+			<div class="footer-logo">
+				<span class="helper"></span>
+				<!--<a href="http://fba.ulisboa.pt" target="_blank">-->
+					<img src="./img/AEFBAUL.png" />
+				<!--</a>-->
 			</div>
 <!--
 			<div class="footer-logo">

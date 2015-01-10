@@ -6,11 +6,12 @@ body {
 	background-color: rgba(80, 123, 173, 1); 
 	color: rgb(245, 245, 245);
 	font-family: "Open Sans Condensed", sans-serif;
+	margin: 0px auto auto;
 }
 
 #page {
 	max-width: 800px;
-	margin: 20px auto;
+	margin: 0px auto 20px;
 }
 
 #main {
@@ -53,11 +54,19 @@ body {
 }
 
 .faqs {
-	padding-top: 20px;
+	padding: 0px 0px 20px;
+}
+
+.faq h3 {
+	cursor: pointer;
 }
 
 .faq p {
 	display: none;
+}
+
+.faq.show p {
+	display: block;
 }
 
 #social {
@@ -133,6 +142,118 @@ a:active {
 	margin-top: 26px;
 }
 
-.faq.show p {
-	display: block;
+hr {
+	border-style: solid;
+	border-top: 1px;
+	color: lightgray;
+}
+
+/* slideshow */
+
+p#cf7_controls {
+	text-align: center;
+	margin: auto;
+	width: 500px;
+}
+
+#cf7_controls span {
+	padding-right: 1.5em;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+#cf7 {
+	position:relative;
+	height: 450px;
+	margin:0 auto 10px;
+	overflow: hidden;
+}
+
+#cf7 img {
+	height:450px;
+	top:-9999px;
+	bottom:-9999px;
+	left:-9999px;
+	right:-9999px;
+	margin:auto;
+	position:absolute;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+#cf7 img.opaque {
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=1);
+}
+		
+@-webkit-keyframes cf7FadeInOut {
+	0% {
+		opacity:1;
+	}
+	45% {
+		opacity:1;
+	}
+	55% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+/*
+#cf7 img.top {
+	-webkit-animation-name: cf7FadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+*/
+
+#cf7_controls span.selected{
+	font-weight: bold;
+}
+
+
+/* menu */
+
+.menu_simple {
+	width: 800px;
+    background-color: rgb(44, 44, 44);
+	z-index: 2;
+	text-align: center;
+}
+
+.menu_simple ul {
+    margin: 0px auto;
+	padding: 0px;
+}
+
+.menu_simple ul li {
+    display: inline-block;
+	vertical-align: middle;
+}
+
+.menu_simple ul li a {
+    float: left; text-decoration: none;
+    color: white; 
+    padding: 13px 11px;
+    background-color:  rgb(44, 44, 44);
+}
+	 
+.menu_simple ul li a:visited {
+    color: white;
+}
+	 
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+    color: white;
+    background-color: rgb(20, 20, 20);
 }

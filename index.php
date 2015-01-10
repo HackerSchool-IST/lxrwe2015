@@ -4,18 +4,25 @@
 	<title>LX Reactor Winter Edition 2015</title>
 	<meta charset="UTF-8">
 	<meta property="og:site_name" content="LX Reactor Winter Edition 2015" />
+	<meta property="og:title" content="LX Reactor Winter Edition 2015" />
 	<meta property="og:url"	content="http://lxreactor.com" />
 	<meta property="og:description" content="" />
 	<meta property="og:locale" content="pt_PT" />
-	<meta property="og:image" content="./img/logo.png" />
-	<meta property="article:author" content="https://www.facebook.com/hackerschoolist" />
+	<meta property="og:image" content="http://lxreactor.com/img/logo.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@hackerschoolist" />
 
 	<script src="./js/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<script src="./js/faq.js"></script>
-
+	<script src="./js/slides.js"></script>
 	<!-- fontawesome icons -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<!-- analytics -->
+	<?php if(!isset($_GET['notrack'])) include_once("analyticstracking.php"); ?>
 </head>
 
 <body>
@@ -28,8 +35,21 @@
 				  fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
 	</script> -->
+	
+	<a id="inicio"></a>
 
 	<div id="page">
+		<div class="menu_simple" style="position: fixed;">
+			<ul>
+				<li><a href="#inicio">LX Reactor WE 2015</a></li>
+				<li><a href="#projectos">Uma amostra de 2014</a></li>
+				<li><a href="#info">Informações</a></li>
+				<li><a href="#inscricoes">Candidatura</a></li>
+				<li><a href="#contactos">Contactos</a></li>
+				<li><a href="http://lxreactor.com/~lxreactor.daemon/lxreactor-2014/" target="_blank">LX Reactor 2014</a></li>
+			</ul>
+		</div>
+
 		<div id="main">
 			<h1 id="title">Winter is coming...</h1>
 			<div id="logo-wrap">
@@ -44,8 +64,36 @@
 
 				<p>A HackerSchool traz-te mais uma edição do LX Reactor Winter Edition já em Fevereiro. Temos algumas novidades preparadas para ti!</p>
 
-				<div class="faqs">
+				<hr>
+				<a id="projectos"></a>
+				<h2>Uma amostra de 2014</h2>
+				<div id="cf7" class="shadow">
+					<img class='opaque' src="./img/FotosProjectos/quadcopter.jpg" />
+					<img src="./img/FotosProjectos/ctrino1.jpg" />
+					<img src="./img/FotosProjectos/energyBrick.jpg" />
+					<img src="./img/FotosProjectos/impressora3D.jpg" />
+					<img src="./img/FotosProjectos/passaporte1.png" />
+					<img src="./img/FotosProjectos/hackerSupply.jpg" />
+					<img src="./img/FotosProjectos/torreDeLEDs.jpg" />
+					<img src="./img/FotosProjectos/chaveNAH.jpg" />
+					<img src="./img/FotosProjectos/fenixQA.png" />
+				</div>
+				<p id="cf7_controls">
+					<span class="selected">Quadcopter</span>
+					<span>c-trino</span>
+					<span>EnergyBrick</span>
+					<span>Impressora 3D</span>
+					<span>Passaporte</span>
+					<span>HackerSupply</span>
+					<span>Torre LEDs</span>
+					<span>chaveNAH</span>
+					<span>FenixQ&A</span>
+				</p>
 
+				<hr>
+				<a id="info"></a>
+				<div class="faqs">
+					<h2>Informações</h2>
 					<div class="faq">
 						<h3>O que é o LX Reactor Winter Edition?</h3>
 
@@ -76,7 +124,7 @@
 					<div class="faq">
 						<h3>Que projetos é que podem participar?</h3>
 
-						<p>Sendo o LX Reactor um evento mais vocacionado para o empreendedorismo de base tecnológica, damos preferência a projetos nestas áreas, mas aceitamos também projetos noutras áreas desde que cumpram o regulamento, claro. O regulamento pode ser consultado <a href="#">aqui</a>.</p>
+						<p>Sendo o LX Reactor um evento mais vocacionado para o empreendedorismo de base tecnológica, damos preferência a projetos nestas áreas, mas aceitamos também projetos noutras áreas desde que cumpram o regulamento, claro. O regulamento pode ser consultado <a href="./docs/RegulamentoProjectos.pdf">aqui</a>.</p>
 					</div>
 
 					<div class="faq">
@@ -85,15 +133,22 @@
 						<p>Para participares terás de preencher o formulário de candidatura<!--<a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>formulário de candidatura</a>-->. Podes candidatar-te individualmente ou já com uma equipa pré-definida. Podes também candidatar-te sem projeto que, através do formulário, iremos juntar-te a um. O formulário estará disponível a partir de dia 12.</p>
 						<p>Após submeteres a candidatura, iremos analisá-la confirmando-te depois a inscrição.</p>
 					</div>
-
 				</div>
-
-				<br /><p>Para mais informações entra em contacto connosco via <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#097;&#099;&#107;&#101;&#114;&#115;&#099;&#104;&#111;&#111;&#108;&#064;&#116;&#101;&#099;&#110;&#105;&#099;&#111;&#046;&#117;&#108;&#105;&#115;&#098;&#111;&#097;&#046;&#112;&#116;">&#104;&#097;&#099;&#107;&#101;&#114;&#115;&#099;&#104;&#111;&#111;&#108;&#064;&#116;&#101;&#099;&#110;&#105;&#099;&#111;&#046;&#117;&#108;&#105;&#115;&#098;&#111;&#097;&#046;&#112;&#116;</a></p>
-
+				
+				<hr>
+				<div>
+				<a id="inscricoes"></a>
+				<h2>Candidatura</h2>
+					<p>A fase de candidaturas ainda não abriu mas marca já a data no teu calendário. Dia 12 de Janeiro de 2015 podes candidatar-te ao melhor desafio do Inverno!</p>
+					<!--<p>Não percas a tua oportunidade de participar no LX Reactor Winter Edition 2015.
+			Preenche o formulário de inscrição presente <a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>aqui</a></p>-->
+			<!--<p>As inscrições encerram dia 6 de Fevereiro de 2015.</p>-->
+				</div>
 			</div>
 		</div>
-
+		
 		<div id="footer">
+			<a id="contactos"></a>
 			<div class="footer-logo">
 				<span class="helper"></span>
 				<a href="http://hackerschool.tecnico.ulisboa.pt">

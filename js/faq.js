@@ -1,9 +1,10 @@
 $(document).ready(function(){
-	$(".faq").click(function() {
-		if(! $(this).hasClass("show"))
-			$(this).addClass("show");
+	$(".faq h3").click(function() {
+		var parent = $(this).parent();
+		if(! parent.hasClass("show"))
+			parent.addClass("show");
 		else
-			$(this).removeClass("show");
+			parent.removeClass("show");
 	});
 });
 

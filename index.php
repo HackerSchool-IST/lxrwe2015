@@ -44,7 +44,7 @@
 				<li><a href="#inicio">LX Reactor WE 2015</a></li>
 				<li><a href="#projectos">Uma amostra de 2014</a></li>
 				<li><a href="#info">Informações</a></li>
-				<li><a href="#inscricoes">Candidatura</a></li>
+				<li><a href="#candidatura">Candidatura</a></li>
 				<li><a href="#contactos">Contactos</a></li>
 				<li><a href="http://lxreactor.com/~lxreactor.daemon/lxreactor-2014/" target="_blank">LX Reactor 2014</a></li>
 			</ul>
@@ -63,7 +63,7 @@
 				<h2>LX Reactor Winter Edition 2015</h2>
 
 				<p>A HackerSchool traz-te mais uma edição do LX Reactor Winter Edition já em Fevereiro. Temos algumas novidades preparadas para ti!</p>
-
+				
 				<hr>
 				<a id="projectos"></a>
 				<h2>Uma amostra de 2014</h2>
@@ -130,19 +130,19 @@
 					<div class="faq">
 						<h3>Como é que faço para participar?</h3>
 
-						<p>Para participares terás de preencher o formulário de candidatura<!--<a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>formulário de candidatura</a>-->. Podes candidatar-te individualmente ou já com uma equipa pré-definida. Podes também candidatar-te sem projeto que, através do formulário, iremos juntar-te a um. O formulário estará disponível a partir de dia 12.</p>
+						<p>Para participares terás de preencher o <a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>formulário de candidatura</a>. Podes candidatar-te individualmente ou já com uma equipa pré-definida. Podes também candidatar-te sem projeto que, através do formulário, iremos juntar-te a um.</p>
 						<p>Após submeteres a candidatura, iremos analisá-la confirmando-te depois a inscrição.</p>
 					</div>
 				</div>
 				
 				<hr>
 				<div>
-				<a id="inscricoes"></a>
+				<a id="candidatura"></a>
 				<h2>Candidatura</h2>
-					<p>A fase de candidaturas ainda não abriu mas marca já a data no teu calendário. Dia 12 de Janeiro de 2015 podes candidatar-te ao melhor desafio do Inverno!</p>
+					<!--<p>A fase de candidaturas ainda não abriu mas marca já a data no teu calendário. Dia 12 de Janeiro de 2015 podes candidatar-te ao melhor desafio do Inverno!</p>-->
 					<!--<p>Não percas a tua oportunidade de participar no LX Reactor Winter Edition 2015.
-			Preenche o formulário de inscrição presente <a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>aqui</a></p>-->
-			<!--<p>As inscrições encerram dia 6 de Fevereiro de 2015.</p>-->
+			Preenche o formulário de candidatura presente <a href="https://docs.google.com/forms/d/1N6uS8F-v9UKzmlM1Y8xn6-p3W62VCo_Q7pXe5VpYGQ4/viewform"</a>aqui</a>.</p>-->
+				<p>As candidaturas encerraram dia 6 de Fevereiro de 2015. Caso não tenhas conseguido candidatar-te, mantém-te actualizado com a HackerSchool pois iremos ter mais eventos para ti!</p>
 				</div>
 			</div>
 		</div>
